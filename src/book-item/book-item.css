@@ -1,21 +1,49 @@
 .book-item {
     display: flex;
-    width: 60%;
     margin: 0 auto 20px;
     box-shadow: 0 4px 10px #aaa;
-    font-family: Arial, sans-serif;
+}
+
+.book-item-row {
+    width: 100%;
+}
+
+.book-item-grid {
+    flex-basis: calc(50% - 10px);
 }
 
 .book-item__content {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     padding: 15px 20px;
 }
 
 .book-item__title {
     font-size: 26px;
-    margin: 0 0 20px;
+    margin: 0;
 }
 
 .book-item__text {
+    flex-grow: 1;
     font-size: 14px;
+}
+
+.controls {
+    display: flex;
+}
+
+.controls button {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.controls button:active {
+    outline: none;
+}
+
+.controls button.active-button {
+    outline: none;
+    background-color: #ccc;
 }

@@ -1,0 +1,6 @@
+.book-list-rows {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}

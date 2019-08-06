@@ -18,7 +18,7 @@ export class BookItem extends Component {
 
   render() {
     return (
-      <div className='book-item'>
+      <div className={`book-item ${this.props.viewType === 'rows' ? 'book-item-row' : 'book-item-grid'}`}>
         <BookImage
           image={this.props.image}
         />

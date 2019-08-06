@@ -1,0 +1,21 @@
+.view-type-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.view-type-button {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.view-type-button:active {
+    outline: none;
+}
+
+.view-type-button--active {
+    outline: none;
+    background-color: #ccc;
+}
