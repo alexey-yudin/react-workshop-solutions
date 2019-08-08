@@ -1,0 +1,24 @@
+.login-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.field-container {
+    margin-top: 20px;
+}
+
+.field {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.save-button {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.save-button:active {
+    outline: none;
+}
