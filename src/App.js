@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import {BookList} from './book-list/book-list';
 import {Login} from './login/login';
 import {BookDetail} from './book-detail/book-detail';
+import {BookEdit} from './book-edit/book-edit';
 import './App.css';
 
 export class App extends Component {
@@ -16,6 +17,7 @@ export class App extends Component {
           <Route path='/grid' component={BookList}/>
           <Route path='/login' component={Login}/>
           <Route path='/book-detail/:id' component={BookDetail}/>
+          <Route path='/book-edit/:id' component={BookEdit}/>
         </div>
       </Router>
     );
