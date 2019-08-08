@@ -1,5 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 import './login.css';
 
 export class Login extends Component {
@@ -31,23 +33,30 @@ export class Login extends Component {
           <h1>Login</h1>
 
           <div className='field-container'>
-            <input
-              className='field'
-              type="text"
+            <TextField
+              label="Login"
               value={this.state.login}
-              onChange={this.handleChange('login')}/>
+              fullWidth={true}
+              onChange={this.handleChange('login')}
+              margin="normal"
+            />
           </div>
 
           <div className='field-container'>
-            <input
-              className='field'
-              type="password"
+            <TextField
+              label="Password"
               value={this.state.password}
-              onChange={this.handleChange('password')}/>
+              type='password'
+              fullWidth={true}
+              onChange={this.handleChange('password')}
+              margin="normal"
+            />
           </div>
 
           <div className='field-container'>
-            <button className='save-button' type='button' onClick={this.onSave}>Login</button>
+            <Button onClick={this.onSave} color="primary" variant="contained">
+              Login
+            </Button>
           </div>
         </form>
       </div>
